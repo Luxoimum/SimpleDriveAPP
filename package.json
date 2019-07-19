@@ -3,14 +3,26 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "encore dev --watch": "node node_modules/@symfony/webpack-encore/bin/encore dev --watch",
+    "encore dev": "node node_modules/@symfony/webpack-encore/bin/encore dev",
+    "encore prod": "node node_modules/@symfony/webpack-encore/bin/encore production"
   },
   "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@symfony/webpack-encore": "^0.27.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-react": "^6.24.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "eslint": "^6.0.1",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack-cli": "^3.3.6"
   }
 }
